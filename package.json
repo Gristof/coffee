@@ -1,0 +1,31 @@
+{
+  "name": "coffee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gristof/coffee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gristof/coffee/issues"
+  },
+  "homepage": "https://github.com/Gristof/coffee#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "concurrently": "^5.2.0",
+    "get-google-fonts": "^1.2.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "html-minifier": "^4.0.0",
+    "sass": "^1.26.10"
+  }
+}
