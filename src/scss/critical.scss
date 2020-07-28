@@ -3,13 +3,17 @@
 $primary: rebeccapurple;
 $secondary: floralwhite;
 
+$coffee: sienna;
+$water: skyblue;
+
 html {
   background: $secondary;
 }
 
 body {
-  font-family: Verdana;
+  font-family: 'Darker Grotesque', sans-serif;
   color: $primary;
+  font-size: 2rem;
   line-height: 1.5;
   max-width: 1440px;
   margin-left: auto;
@@ -36,6 +40,17 @@ body {
   background: $primary;
 }
 
-h1 {
-  font-size: 20rem;
+.wrapper {
+  max-width: 24rem;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.beans svg {
+  fill: $coffee;
+}
+
+.water svg {
+  fill: $water;
 }
