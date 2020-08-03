@@ -1,27 +1,24 @@
 @import 'reset';
 
-$primary: rebeccapurple;
-$secondary: floralwhite;
-
-$coffee: sienna;
-$water: skyblue;
+$light: #fcfcfc;
+$dark: #111;
 
 html {
-  background: $secondary;
+  background: $light;
 }
 
 body {
-  font-family: 'Darker Grotesque', sans-serif;
-  color: $primary;
-  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: $dark;
+  font-size: 1.5rem;
   line-height: 1.5;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   opacity: 0;
   animation: blendIn 1000ms ease-in-out 250ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
   @keyframes blendIn {
     0% { opacity: 0; }
@@ -30,27 +27,14 @@ body {
 }
 
 :focus {
-  outline: 2px dashed $primary;
+  outline: 2px dashed $dark;
   outline-offset: 0.25rem;
 }
 
 ::selection {
-  color: $secondary;
+  color: $light;
 
-  background: $primary;
+  background: $dark;
 }
 
-.wrapper {
-  max-width: 24rem;
-  padding: 2rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.beans svg {
-  fill: $coffee;
-}
-
-.water svg {
-  fill: $water;
-}
+@import 'home';

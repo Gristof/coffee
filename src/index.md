@@ -1,5 +1,5 @@
 ---
-title: 'Coffee'
+title: 'Filter Coffee Scale'
 metaDesc: ''
 layout: 'layouts/home.html'
 ---
