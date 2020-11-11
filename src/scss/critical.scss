@@ -37,3 +37,8 @@ body {
 }
 
 @import 'home';
+
+@media (prefers-color-scheme: dark) {
+  $light: #111;
+  $dark: #fcfcfc;
+}
