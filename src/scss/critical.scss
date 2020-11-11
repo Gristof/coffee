@@ -4,10 +4,8 @@ $light: #fcfcfc;
 $dark: #111;
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    $light: #111;
-    $dark: #fcfcfc;
-  }
+  $light: #111;
+  $dark: #fcfcfc;
 }
 
 html {
