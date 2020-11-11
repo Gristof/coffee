@@ -1,21 +1,25 @@
 @import 'reset';
 
-$light: #fcfcfc;
-$dark: #111;
+:root {
+  --primary: #fcfcfc;
+  --secondary: #111;
+}
 
 @media (prefers-color-scheme: dark) {
-  $light: #111;
-  $dark: #fcfcfc;
+  :root {
+    --primary: #111;
+    --secondary: #fcfcfc;
+  }
 }
 
 html {
-  background: $light;
+  background: var(--primary);
 }
 
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: $dark;
+  color: var(--secondary);
   font-size: 1.5rem;
   line-height: 1.5;
   opacity: 0;
@@ -32,13 +36,13 @@ body {
 }
 
 :focus {
-  outline: 2px dashed $dark;
+  outline: 2px dashed var(--secondary);
   outline-offset: 0.25rem;
 }
 
 ::selection {
-  color: $light;
-  background: $dark;
+  color: var(--primary);
+  background: var(--secondary);
 }
 
 @import 'home';
